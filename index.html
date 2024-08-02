@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kadri Park Mangalore</title>
+</head>
+<style>
+    /* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Keyframes for Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.5);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f4f4f4;
+    color: #333;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Header Styling */
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    animation: slideIn 1s ease-out;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ff6347;
+}
+
+/* Section Styling */
+.section {
+    padding: 20px;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#home {
+    background: url('image4.png') no-repeat center center/cover;
+    color: #fff;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#home h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    animation: bounceIn 1s ease-out;
+}
+
+/* Attractions Styling */
+#attractions .attraction {
+    margin: 20px 0;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Gallery Styling */
+.gallery-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.gallery-grid img {
+    width: 30%;
+    margin: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Contact Form Styling */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    animation: fadeIn 2s ease-in-out;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+form button {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #555;
+}
+
+/* Footer Styling */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+</style>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#attractions">Attractions</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#map">Map</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home" class="section">
+        <h1>Welcome to Kadri Park</h1>
+        <h3>Kadri Hills,Mangalore-574199</h3>
+            </section>
+    
+    <section id="about" class="section">
+        <h2>About Us</h2>
+        <p>Kadri Park is a serene place for families and nature enthusiasts.The park spans over 200 acres of lush greenery, scenic trails, and vibrant flower gardens. Our mission is to provide a natural retreat for visitors to relax, unwind, and connect with nature. We host a variety of events throughout the year, including guided nature walks, bird watching tours.</p>
+        <p>We are committed to preserving the natural beauty of the park while providing educational and recreational opportunities for all ages. Our dedicated team of volunteers and staff work tirelessly to maintain the park's pristine condition and ensure a memorable experience for all our visitors.</p>
+    </section>
+    
+    <section id="attractions" class="section">
+        <h2>Attractions</h2>
+        <div class="attraction">
+            <h3>Nature Trails</h3>
+            <p>Explore our scenic trails that wind through forests, meadows, and along the riverbanks. Each trail offers a unique perspective on the park's diverse ecosystem, with opportunities to spot various wildlife and enjoy breathtaking views. Our well-marked trails cater to all levels of hikers, from easy walks to more challenging hikes.</p>
+        </div>
+        <div class="attraction">
+            <h3>Playground</h3>
+            <p>Fun for kids of all ages, our playground is equipped with modern and safe play structures. Children can enjoy swings, slides, climbing frames, and a sandbox, all designed to provide endless hours of entertainment. The playground is conveniently located near picnic areas, making it easy for families to spend quality time together.</p>
+        </div>
+        <div class="attraction">
+            <h3>Picnic Areas</h3>
+            <p>Our picnic areas are perfect spots for family gatherings, birthday parties, or a relaxing meal outdoors. With plenty of tables, barbecue grills, and shaded areas, you can enjoy a delightful picnic surrounded by nature. Each picnic area offers a unique setting, from open meadows to secluded spots by the river.</p>
+        </div>
+    </section>
+    
+    <section id="gallery" class="section">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+            <img src="img1.jpg" alt="">
+            <img src="img 2.png" alt="">
+            <img src="img3.jpg" alt="">
+        </div>
+    </section>
+    <section id="map" class="section">
+        <h2>Map</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62228.66102094095!2d74.78000544863279!3d12.888980199999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba35ba4fa92feed%3A0x88d5f9ac7cd17769!2sKadri%20Park!5e0!3m2!1sen!2sin!4v1722515923027!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; created by Nikhil. 2024 Kadri Park Mangalore. All rights reserved.</p>
+    </footer>
+</body>
+</html>
